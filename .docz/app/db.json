@@ -1,0 +1,77 @@
+{
+  "config": {
+    "title": "Chat ws",
+    "description": "This is my awesome documentation",
+    "menu": [],
+    "version": "0.1.0",
+    "repository": null,
+    "native": false,
+    "codeSandbox": true,
+    "themeConfig": {},
+    "separator": "-"
+  },
+  "props": [
+    {
+      "key": "/home/tales/Documents/Projetos/Extra/chat-ws/src/App.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "App",
+          "methods": [],
+          "actualName": "App"
+        }
+      ]
+    },
+    {
+      "key": "/home/tales/Documents/Projetos/Extra/chat-ws/src/redux/main/main.jsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "main",
+          "methods": [],
+          "actualName": "main"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "key": "index.mdx",
+      "value": {
+        "name": "index",
+        "route": "/",
+        "id": "91149a4106ab27ef746308b41227aca8",
+        "filepath": "index.mdx",
+        "link": "",
+        "slug": "index",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "index",
+            "depth": 1,
+            "value": "Index"
+          }
+        ]
+      }
+    },
+    {
+      "key": "src/index.mdx",
+      "value": {
+        "name": "Hello world",
+        "id": "6576455a124f9aaefd860597f03a8fe4",
+        "filepath": "src/index.mdx",
+        "link": "",
+        "slug": "src-index",
+        "route": "/src-index",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "hello-world",
+            "depth": 1,
+            "value": "Hello world"
+          }
+        ]
+      }
+    }
+  ]
+}
