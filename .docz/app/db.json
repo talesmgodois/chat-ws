@@ -7,7 +7,24 @@
     "repository": null,
     "native": false,
     "codeSandbox": true,
-    "themeConfig": {},
+    "themeConfig": {
+      "mode": "dark",
+      "codemirrorTheme": "dracula",
+      "styles": {
+        "playground": {
+          "padding": [
+            "0",
+            "32px"
+          ],
+          "height": "100%",
+          "background": "#fff"
+        },
+        "h1": {
+          "fontFamily": "'Source Sans Pro', Helvetica, sans-serif",
+          "fontSize": 36
+        }
+      }
+    },
     "separator": "-"
   },
   "props": [
@@ -47,9 +64,9 @@
         "menu": "",
         "headings": [
           {
-            "slug": "index",
+            "slug": "app-component",
             "depth": 1,
-            "value": "Index"
+            "value": "App Component"
           }
         ]
       }
