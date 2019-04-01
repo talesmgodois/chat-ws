@@ -1,0 +1,54 @@
+---
+name: Header
+route: '/header'
+---
+
+import { Playground, Props } from 'docz';
+import User from '../src/domain/user.domain';
+import HeaderComponent from '../src/views/components/header/header.component';
+
+# App Component
+
+## Samples
+
+### Default component
+
+<Playground>
+    {() => {
+        const user = new User({ name: 'Tales' });
+        return <HeaderComponent user={user} />;
+    }}
+</Playground>
+
+### Changing user
+
+<Playground>
+    {() => {
+        const user = new User({ name: 'Michael' });
+        return <HeaderComponent user={user} />;
+    }}
+</Playground>
+
+### Changing background color
+
+<Playground>
+    {() => {
+        const user = new User({ name: 'Tales' });
+        const color = 'green';
+        return <HeaderComponent user={user} backgroundColor={color} />;
+    }}
+</Playground>
+
+### Changing background color
+
+<Playground>
+    {() => {
+        const user = new User({ name: 'Tales' });
+        const color = 'green';
+        return <HeaderComponent user={user} backgroundColor={color} />;
+    }}
+</Playground>
+
+## Properties
+
+<Props of={HeaderComponent} />

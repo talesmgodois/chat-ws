@@ -7,27 +7,100 @@
     "repository": null,
     "native": false,
     "codeSandbox": true,
-    "themeConfig": {
-      "mode": "dark",
-      "codemirrorTheme": "dracula",
-      "styles": {
-        "playground": {
-          "padding": [
-            "0",
-            "32px"
-          ],
-          "height": "100%",
-          "background": "#fff"
-        },
-        "h1": {
-          "fontFamily": "'Source Sans Pro', Helvetica, sans-serif",
-          "fontSize": 36
-        }
-      }
-    },
+    "themeConfig": {},
     "separator": "-"
   },
   "props": [
+    {
+      "key": "/Users/talesmarinho/projetos/chat-ws/src/routes/main.router.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "MainRoutes",
+          "methods": [],
+          "actualName": "MainRoutes"
+        }
+      ]
+    },
+    {
+      "key": "/Users/talesmarinho/projetos/chat-ws/src/controller/main/main.jsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "main",
+          "methods": [],
+          "actualName": "main"
+        }
+      ]
+    },
+    {
+      "key": "/Users/talesmarinho/projetos/chat-ws/src/views/components/message/message.component.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "MessageComponent",
+          "methods": [],
+          "actualName": "MessageComponent"
+        }
+      ]
+    },
+    {
+      "key": "/Users/talesmarinho/projetos/chat-ws/src/views/screens/chat/chat.component.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "ChatComponent",
+          "methods": [],
+          "actualName": "ChatComponent"
+        }
+      ]
+    },
+    {
+      "key": "/Users/talesmarinho/projetos/chat-ws/src/views/screens/404/Error404.error.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Error404",
+          "methods": [],
+          "actualName": "Error404"
+        }
+      ]
+    },
+    {
+      "key": "/Users/talesmarinho/projetos/chat-ws/src/views/components/header/header.component.js",
+      "value": [
+        {
+          "description": "",
+          "displayName": "HeaderComponent",
+          "methods": [
+            {
+              "name": "handleClose",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            }
+          ],
+          "actualName": "HeaderComponent",
+          "props": {
+            "user": {
+              "type": {
+                "name": "object"
+              },
+              "required": true,
+              "description": ""
+            },
+            "backgroundColor": {
+              "type": {
+                "name": "string"
+              },
+              "required": false,
+              "description": ""
+            }
+          }
+        }
+      ]
+    },
     {
       "key": "/Users/talesmarinho/projetos/chat-ws/src/App.js",
       "value": [
@@ -36,17 +109,6 @@
           "displayName": "App",
           "methods": [],
           "actualName": "App"
-        }
-      ]
-    },
-    {
-      "key": "/Users/talesmarinho/projetos/chat-ws/src/redux/main/main.jsx",
-      "value": [
-        {
-          "description": "",
-          "displayName": "main",
-          "methods": [],
-          "actualName": "main"
         }
       ]
     }
@@ -72,20 +134,50 @@
       }
     },
     {
-      "key": "src/index.mdx",
+      "key": "documentation/header.mdx",
       "value": {
-        "name": "Hello world",
-        "id": "6576455a124f9aaefd860597f03a8fe4",
-        "filepath": "src/index.mdx",
+        "name": "Header",
+        "route": "/header",
+        "id": "bc6724fa986c931674bc748b3575e9e3",
+        "filepath": "documentation/header.mdx",
         "link": "",
-        "slug": "src-index",
-        "route": "/src-index",
+        "slug": "documentation-header",
         "menu": "",
         "headings": [
           {
-            "slug": "hello-world",
+            "slug": "app-component",
             "depth": 1,
-            "value": "Hello world"
+            "value": "App Component"
+          },
+          {
+            "slug": "samples",
+            "depth": 2,
+            "value": "Samples"
+          },
+          {
+            "slug": "default-component",
+            "depth": 3,
+            "value": "Default component"
+          },
+          {
+            "slug": "changing-user",
+            "depth": 3,
+            "value": "Changing user"
+          },
+          {
+            "slug": "changing-background-color",
+            "depth": 3,
+            "value": "Changing background color"
+          },
+          {
+            "slug": "changing-background-color-1",
+            "depth": 3,
+            "value": "Changing background color"
+          },
+          {
+            "slug": "properties",
+            "depth": 2,
+            "value": "Properties"
           }
         ]
       }
