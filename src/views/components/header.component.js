@@ -22,17 +22,23 @@ const styles = {
   },
 };
 
+const getCloseIcon = action => {
+  return (
+    <IconButton aria-label="Close" style={styles.white} onClick={action}>
+      <CloseIcon fontSize="small" />
+    </IconButton>
+  );
+};
+
 class HeaderComponent extends React.Component {
   constructor(props) {
     super(props);
   }
 
-  handleClose() {
-    console.log("close button");
-  }
-
   render() {
-    const { user } = this.props;
+    const { user, closeButton } = this.props;
+
+    const elemCloseButton = closeButton ? getCloseIcon(closeButton) : null;
 
     return (
       <AppBar
@@ -52,13 +58,7 @@ class HeaderComponent extends React.Component {
           >
             {user.name}
           </Typography>
-          <IconButton
-            aria-label="Close"
-            style={styles.white}
-            onClick={this.handleClose()}
-          >
-            <CloseIcon fontSize="small" />
-          </IconButton>
+          {elemCloseButton}
         </Toolbar>
       </AppBar>
     );
@@ -68,6 +68,7 @@ class HeaderComponent extends React.Component {
 HeaderComponent.propTypes = {
   user: PropTypes.object.isRequired,
   backgroundColor: PropTypes.string,
+  closeButton: PropTypes.func,
 };
 
 export default HeaderComponent;
