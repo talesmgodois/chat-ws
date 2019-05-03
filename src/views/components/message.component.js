@@ -3,7 +3,6 @@ import { Typography, Card } from "@material-ui/core";
 import Grid from "@material-ui/core/Grid";
 import IconButton from "@material-ui/core/IconButton";
 import { withStyles } from "@material-ui/core/styles";
-import MoreVertIcon from "@material-ui/icons/MoreVert";
 
 const styles = {
   card: {
@@ -11,42 +10,42 @@ const styles = {
     padding: 10,
   },
   body: {
-    width: "90%",
+    marginTop: 10,
+    marginBottom: 10,
   },
 };
 
-const messageButton = () => {
+const MessageButton = props => {
+  const { icon } = props;
   return (
-    <Grid item xs={2}>
-      <IconButton>
-        <MoreVertIcon />
-      </IconButton>
+    <Grid item xs={1}>
+      <IconButton>{icon}</IconButton>
     </Grid>
   );
 };
 
 const MessageComponent = props => {
-  const { msg: { content }, classes, type } = props;
-  const leftButton = type === "left" ? messageButton() : null;
-  const leftSpace = type === "left" ? <Grid item xs={2} /> : null;
-  const rightButton = type === "right" ? messageButton() : null;
-  const rightSpace = type === "right" ? <Grid item xs={2} /> : null;
+  const { msg: { content }, classes, type, icon } = props;
+
+  const leftButton = type === "left" ? <MessageButton icon={icon} /> : null;
+  const rightButton = type === "right" ? <MessageButton icon={icon} /> : null;
+  const space = type === "left" ? <Grid item xs /> : null;
+  const direction = "row";
 
   return (
-    <Grid container>
-      {leftSpace}
+    <Grid container className={classes.body}>
+      {space}
       <Grid item xs={10}>
         <Card>
-          <Grid container>
-            {rightButton}
+          <Grid container direction={direction}>
+            {leftButton}
             <Grid item xs={10}>
               <Typography className={classes.card}>{content}</Typography>
             </Grid>
-            {leftButton}
+            {rightButton}
           </Grid>
         </Card>
       </Grid>
-      {rightSpace}
     </Grid>
   );
 };
