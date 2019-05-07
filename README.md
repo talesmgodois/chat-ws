@@ -1,6 +1,7 @@
 # Contributing to Chat Ws
 
 -   [About](#about)
+-   [Want to contribute?](#contribute)
 -   [New Scripts](#scripts)
 -   [Create React App Documentation](#react)
 
@@ -15,6 +16,12 @@ This is a project to learn and create a front end and responsive application to 
 #### Using npm: `npm run storybook`
 
 #### Using yarn: `yarn storybook`
+
+## <a name="contribute"></a> Want to contribute?
+
+You can fork the application and make pull requests.
+
+But, at the beginning We would like you being part of this group, so, introduce yourself <a href='https://github.com/talesmgodois/chat-ws/issues/4'>here</a>, and we'll add you to the team.
 
 ## <a name="react"></a> Create React App Documentation
 
@@ -86,5 +93,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 #### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-
-
