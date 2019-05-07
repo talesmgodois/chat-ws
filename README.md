@@ -1,4 +1,4 @@
-#Contributing to Chat ws
+# Contributing to Chat Ws
 
 -   [About](#about)
 -   [New Scripts](#scripts)
