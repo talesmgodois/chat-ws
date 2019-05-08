@@ -1,5 +1,6 @@
 import { PropTypes } from "prop-types";
 import React from "react";
+import { PLACEHOLDER } from "../../stores/TextStore";
 import { withStyles } from "@material-ui/core";
 import Fab from "@material-ui/core/Fab";
 import Grid from "@material-ui/core/Grid";
@@ -19,7 +20,7 @@ const SendMessageComponent = props => {
   const {
     classes,
     handleSendButtonClick = logIt,
-    placeholder = "Type your text here",
+    placeholder = PLACEHOLDER,
   } = props;
 
   return (

@@ -5,6 +5,7 @@ function loadStories() {
   require("../stories/header");
   require("../stories/message");
   require("../stories/send-message");
+  require("../stories/text.js");
 }
 
 configure(loadStories, module);
