@@ -16,8 +16,8 @@ storiesOf("Send Message", module)
   .add("Changing placeholder", () => {
     return (
       <React.Fragment>
-        <SendMessageComponent placeholder={"Cool placehholder"} />
-        <SendMessageComponent placeholder={"Another placehholder"} />
+        <SendMessageComponent placeholder={"Cool placeholder"} />
+        <SendMessageComponent placeholder={"Another placeholder"} />
       </React.Fragment>
     );
   });
