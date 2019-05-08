@@ -6,6 +6,7 @@ function loadStories() {
   require("../stories/message");
   require("../stories/send-message");
   require("../stories/text.js");
+  require("../stories/contacts-list.js");
 }
 
 configure(loadStories, module);
